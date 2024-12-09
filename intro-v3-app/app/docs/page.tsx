@@ -1,7 +1,7 @@
 const DocsPage = () => {
-    return <div>
+    return <h1>
         docs
-    </div>
+    </h1>
 }
 
 export default DocsPage;
