@@ -1,13 +1,13 @@
 interface Params {
-    id: string;
+    id?: string[];
 }
 
-const DocsIdPage = async ({ params }: { params: Params }) => {
+const DocsIdPage = async ({ params }: { params: Promise<Params> }) => {
     const { id } = await params;
     return (
         <div>
             <h1>DocsIdPage</h1>
-            <p>id: {id}</p>
+            <p>docId: {id}</p>
         </div>
     );
 }
